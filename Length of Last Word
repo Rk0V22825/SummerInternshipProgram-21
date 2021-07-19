@@ -1,0 +1,15 @@
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        if(s.length()==0)
+            return 0;
+        stringstream ss;
+        ss.str(s);
+        string r;
+        int i = 0;
+        while(ss>>r){
+            i++;
+        }
+        return r.length();
+    }
+};

@@ -1,0 +1,15 @@
+class Solution {
+public:
+    string reverseWords(string s) {
+        stringstream ss; 
+        ss.str(s);
+        string res = "", k="";
+        ss>>res;
+        k=res;
+        while(ss>>res){
+            k = res+" "+k;
+        }
+        return k;
+        
+    }
+};
